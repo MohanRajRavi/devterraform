@@ -1,0 +1,9 @@
+data "aws_ami" "ubuntu" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-20180913 - ami-06b5810be11add0e2"]
+  }
+
+}

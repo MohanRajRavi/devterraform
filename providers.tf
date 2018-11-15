@@ -1,4 +1,5 @@
 provider "aws" {
- aws_key_file="var.aws_key_direcory"
- region="var.aws_region"
+ access_key = "${var.aws_access_key}"
+ secret_key = "${var.aws_secret_key}"
+ region="${var.aws_region}"
 }
